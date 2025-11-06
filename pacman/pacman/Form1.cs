@@ -17,13 +17,13 @@ namespace pacman
             InitializeComponent();
         }
         bool goup, godown, goright, goleft = false;
-        PictureBox[] pictureBoxes;
-        Panel[] panels;
+        PictureBox[] pictureBoxes; //重新命名
+        Panel[] panels; //重新命名
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Interval = 5;
             timer1.Enabled = Enabled;
-            panels = new Panel[4]
+            panels = new Panel[4] //[]輸入的數字要跟panel的數量一樣
             {
                 panel1,
                 panel2,
@@ -31,7 +31,7 @@ namespace pacman
                 panel4,
             };
 
-            pictureBoxes = new PictureBox[13]
+            pictureBoxes = new PictureBox[13] //[]輸入的數字要跟picturebox的數量一樣
             {
                 pictureBox1,
                 pictureBox2,
@@ -139,4 +139,5 @@ namespace pacman
 
     }
 }
+
 
